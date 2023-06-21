@@ -1,6 +1,6 @@
 <template>
+  <Navbar v-if="sidebar" />
   <div class="home">
-    <Navbar v-if="sidebar" />
     <Sidebar v-if="sidebar" />
     <router-view />
   </div>
@@ -24,4 +24,7 @@ export default {
 </script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.home{
+  display: flex;
+}
 </style>

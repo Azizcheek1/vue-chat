@@ -1,29 +1,27 @@
 <template>
-  <div class="container-fluid">
-    <div class="sidebar">
-      <div class="sidebar-box">
-        <div class="user_img">
-          <img class="user-img" src="../../assets//images/user.png" alt="" />
-          <p class="user-logo__name text-center mb-0">Анатолий Викторович</p>
-        </div>
-        <ul class="sidebar-list">
-          <li class="sidebar-list__item d-flex align-items-center">
-            <img src="../../assets/icons//home.svg" alt="" />
-            <p class="sidebar-list__text mb-0">Главный экран</p>
-          </li>
-          <li class="sidebar-list__item d-flex align-items-center">
-            <img src="../../assets/icons//message.svg" alt="" />
-            <p class="sidebar-list__text mb-0">Чат</p>
-          </li>
-          <li class="sidebar-list__item d-flex align-items-center">
-            <img src="../../assets/icons//settings.svg" alt="" />
-            <p class="sidebar-list__text mb-0">Настройки</p>
-          </li>
-        </ul>
+  <div class="sidebar">
+    <div class="sidebar-box">
+      <div class="user_img">
+        <img class="user-img" src="../../assets//images/user.png" alt="" />
+        <p class="user-logo__name text-center mb-0">Анатолий Викторович</p>
       </div>
-      <div class="back-box">
-        <a class="back-box__link" href="#">Выйти</a>
-      </div>
+      <ul class="sidebar-list">
+        <li class="sidebar-list__item d-flex align-items-center">
+          <img src="../../assets/icons//home.svg" alt="" />
+          <p class="sidebar-list__text mb-0">Главный экран</p>
+        </li>
+        <li class="sidebar-list__item d-flex align-items-center">
+          <img src="../../assets/icons//message.svg" alt="" />
+          <p class="sidebar-list__text mb-0">Чат</p>
+        </li>
+        <li class="sidebar-list__item d-flex align-items-center">
+          <img src="../../assets/icons//settings.svg" alt="" />
+          <p class="sidebar-list__text mb-0">Настройки</p>
+        </li>
+      </ul>
+    </div>
+    <div class="back-box">
+      <a class="back-box__link" href="#">Выйти</a>
     </div>
   </div>
 </template>
@@ -41,8 +39,7 @@ export default {
   justify-content: space-between;
   flex-direction: column;
   background-color: #fefefe;
-  max-width: 232px;
-  width: 100%;
+  width: 232px;
 }
 .user-logo__name {
   font-family: "Roboto", sans-serif;
@@ -67,7 +64,7 @@ export default {
 }
 .sidebar-list {
   margin: 0;
-  padding: 0;
+  padding-left:10px ;
 }
 .sidebar-list__item:not(:last-child) {
   margin-bottom: 30px;
