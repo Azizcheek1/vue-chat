@@ -9,21 +9,21 @@
             <div class="input-group">
               <input
                 type="mail"
-                class="form-control"
+                class="form-control shadow-none"
                 placeholder="Electron pochta"
               />
             </div>
             <div class="input-group my-1">
-              <input type="mail" class="form-control" placeholder="Code" />
+              <input type="mail" class="form-control shadow-none" placeholder="Code" />
               <button class="btn btn-primary">Get code</button>
             </div>
             <div class="input-group my-1">
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-none"
                 placeholder="Foydalanuvchi nomi"
               />
-              <input type="password" class="form-control" placeholder="Parol" />
+              <input type="password" class="form-control shadow-none" placeholder="Parol" />
             </div>
             <h6 class="d-flex justify-content-between px-2">
               <a>Kirish</a>

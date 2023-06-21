@@ -9,12 +9,12 @@
             <div class="input-group">
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-none"
                 placeholder="Foydalanuvchi nomi"
               />
             </div>
             <div class="input-group my-1">
-              <input type="password" class="form-control" placeholder="Parol" />
+              <input type="password" class="form-control shadow-none" placeholder="Parol" />
             </div>
             <h6 class="d-flex justify-content-between px-2">
               <a @click="$router.push(`/sign-up`)">Royxatdan o`tish</a
