@@ -27,16 +27,16 @@ export default createStore({
       }, 200);
     },
     setshow_navbar(state, show_navbar) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        state.show_navbar = show_navbar;
-      }, 200);
+      state.show_navbar = show_navbar;
+      // clearTimeout(timeout);
+      // timeout = setTimeout(() => {
+      // }, 200);
     },
     setshow_sidebar(state, show_sidebar) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        state.show_sidebar = show_sidebar;
-      }, 200);
+      state.show_sidebar = show_sidebar;
+      // clearTimeout(timeout);
+      // timeout = setTimeout(() => {
+      // }, 200);
     },
   }
 })

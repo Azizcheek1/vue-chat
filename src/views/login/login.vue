@@ -45,15 +45,9 @@ export default {
   methods: {
     login() {
       // token( {} ).then(()=> {
-        this.$store.dispatch("setshow_sidebar", true);
-        this.$store.dispatch("setshow_navbar", true);
-      location.href = "/sign-up";
+      location.href = "/main";
       // })
     },
-  },
-  mounted() {
-    this.$store.dispatch("setshow_sidebar", false);
-    this.$store.dispatch("setshow_navbar", false);
   },
 };
 </script>

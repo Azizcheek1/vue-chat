@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <Navbar v-if="show_navbar" />
-    <Sidebar v-if="show_sidebar" />
+    <Navbar v-if="sidebar" />
+    <Sidebar v-if="sidebar" />
     <router-view />
   </div>
 </template>
@@ -14,17 +14,14 @@ export default {
     Sidebar,
   },
   computed: {
-    show_navbar() {
-      return this.$store.getters.show_navbar;
-    },
-    show_sidebar() {
-      return this.$store.getters.show_sidebar;
+    sidebar() {
+      if (["login", "sign-up"].includes(this.$route.name)) {
+        return false;
+      } else return true;
     },
   },
 };
 </script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-.home {
-}
 </style>
