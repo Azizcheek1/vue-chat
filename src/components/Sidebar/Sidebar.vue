@@ -41,6 +41,8 @@ export default {
   justify-content: space-between;
   flex-direction: column;
   background-color: #fefefe;
+  max-width: 232px;
+  width: 100%;
 }
 .user-logo__name {
   font-family: "Roboto", sans-serif;
@@ -49,30 +51,23 @@ export default {
   line-height: 120%;
   color: rgba(1, 29, 50, 0.5);
 }
-.user_img{
-    width: 100%;
-    margin-bottom: 30px; 
-}
-
-.user-img{
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-.sidebar {
-  max-width: 232px;
+.user_img {
   width: 100%;
+  margin-bottom: 30px;
 }
 
-.sidebar-box{
-    padding-top: 32px;
+.user-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
-
-.sidebar-list{
-    margin: 0;
-    padding: 0;
+.sidebar-box {
+  padding-top: 32px;
+}
+.sidebar-list {
+  margin: 0;
+  padding: 0;
 }
 .sidebar-list__item:not(:last-child) {
   margin-bottom: 30px;
