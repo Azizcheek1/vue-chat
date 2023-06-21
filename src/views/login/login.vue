@@ -3,7 +3,7 @@
     <div class="row h-100">
       <div class="col-md-6 h-100 form-div">
         <div class="col-md-7">
-          <form @submit.prevent="">
+          <form @submit.prevent="login">
             <h4>Hush kelibsiz</h4>
             <h5>Kirish:</h5>
             <div class="input-group">
@@ -14,7 +14,11 @@
               />
             </div>
             <div class="input-group my-1">
-              <input type="password" class="form-control shadow-none" placeholder="Parol" />
+              <input
+                type="password"
+                class="form-control shadow-none"
+                placeholder="Parol"
+              />
             </div>
             <h6 class="d-flex justify-content-between px-2">
               <a @click="$router.push(`/sign-up`)">Royxatdan o`tish</a
@@ -36,7 +40,22 @@
 </template>
 
 <script>
-export default {};
+import { token } from "@/utils/api";
+export default {
+  methods: {
+    login() {
+      // token( {} ).then(()=> {
+        this.$store.dispatch("setshow_sidebar", true);
+        this.$store.dispatch("setshow_navbar", true);
+      location.href = "/sign-up";
+      // })
+    },
+  },
+  mounted() {
+    this.$store.dispatch("setshow_sidebar", false);
+    this.$store.dispatch("setshow_navbar", false);
+  },
+};
 </script>
 
 <style scoped lang="scss">

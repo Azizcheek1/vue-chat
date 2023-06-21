@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <Navbar />
-    <Sidebar />
+    <Navbar v-if="show_navbar" />
+    <Sidebar v-if="show_sidebar" />
     <router-view />
   </div>
 </template>
@@ -12,6 +12,14 @@ export default {
   components: {
     Navbar,
     Sidebar,
+  },
+  computed: {
+    show_navbar() {
+      return this.$store.getters.show_navbar;
+    },
+    show_sidebar() {
+      return this.$store.getters.show_sidebar;
+    },
   },
 };
 </script>
