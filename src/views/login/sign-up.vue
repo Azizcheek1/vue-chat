@@ -5,20 +5,28 @@
         <div class="col-md-7">
           <form @submit.prevent="">
             <h4>Hush kelibsiz</h4>
-            <h5>Kirish:</h5>
+            <h5>Royxatdan o`tish:</h5>
             <div class="input-group">
+              <input
+                type="mail"
+                class="form-control"
+                placeholder="Electron pochta"
+              />
+            </div>
+            <div class="input-group my-1">
+              <input type="mail" class="form-control" placeholder="Code" />
+              <button class="btn btn-primary">Get code</button>
+            </div>
+            <div class="input-group my-1">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Foydalanuvchi nomi"
               />
-            </div>
-            <div class="input-group my-1">
               <input type="password" class="form-control" placeholder="Parol" />
             </div>
             <h6 class="d-flex justify-content-between px-2">
-              <a @click="$router.push(`/sign-up`)">Royxatdan o`tish</a
-              ><a>Parolni unutdingizmi?</a>
+              <a>Kirish</a>
             </h6>
             <div class="submit">
               <button class="btn btn-success w-100">Tasdiqlash</button>
