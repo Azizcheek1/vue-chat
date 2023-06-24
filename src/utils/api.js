@@ -95,3 +95,7 @@ export function token(data) {
   form_data.append("password", data.password);
   return api(`token`, `POST`, form_data);
 }
+
+export function getChats(user_id, ) {
+
+}
