@@ -1,11 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import notepad from "@/views/notepad.vue";
+import mainVue from "@/views/main.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
-  { path: '/', name: 'login', component: () => { return import('@/views/login/login.vue') } },
-  { path: '/sign-up', name: 'sign-up', component: () => { return import('@/views/login/sign-up.vue') } },
-  { path: '/main', name: 'main', component: () => { return import('@/views/main/main.vue') } },
-]
+  {
+    path: "/",
+    name: "main",
+    component: mainVue,
+  },
+  {
+    path: "/notepad",
+    name: "notepad",
+    component: notepad,
+  },
+];
 
-const router = createRouter({ history: createWebHistory(process.env.BASE_URL), routes })
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+});
 
-export default router
+export default router;
