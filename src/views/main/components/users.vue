@@ -62,6 +62,7 @@ export default {
         e.username.includes(this.search);
       });
     },
+    getChats() {},
   },
 };
 </script>
@@ -73,6 +74,7 @@ export default {
   margin: 5px;
   border-radius: 5px;
   background-color: whitesmoke;
+  cursor: pointer;
   .user__icon {
     width: 30%;
     img {
